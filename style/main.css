@@ -1,0 +1,115 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+    /* variaveis para nao ficar mudando */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* tirar a borda do site */
+}
+/* elementos normais */
+
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   /* colocar os itens no lado direito */
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header  nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+    /* quando passar o mouse muda de cor */
+}
+    
+
+
+
+/* filme pricipal */
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(/img/fundo.jpg);
+    height: 400px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color:rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+    /* dar um efeito de aparecer no botão */
+}
+
+.botao:hover{
+    /* coloca efeito de quando passar o mouse ele muda de cor, vai do branco pro preto */
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    /* coloca espaço entre o icone */
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+    width:  70%;
+    /* definir ate onde o tamanho vai */
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 10px;
+}
