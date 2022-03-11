@@ -14,3 +14,21 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+
+const imgs = window.document.getElementById('filme');
+const img = document.querySelectorAll('#filme filme');
+
+let idx = 0;
+
+function mudarTela(){
+    idx ++;
+    if(idx > img.length -1){
+        idx = 0;
+    }
+
+    imgs.style.transform =  `translateX(${-idx * 400}px)`;
+}
+setInterval(mudarTela, 2000);
+
+
